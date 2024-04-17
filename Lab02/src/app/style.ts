@@ -7,9 +7,29 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10
   },
+  header:{
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 40,
+    marginBottom: 20
+  },
   title:{
     fontSize: 30,
     fontWeight: 'bold'
+  },
+  list:{
+    flexDirection: 'column',
+    width: 300,
+    gap: 10
+  },
+  itemList:{
+    backgroundColor: '#3a283e',
+    color: '#fff',
+    marginBottom: 10,
+    padding: 10,
+    borderRadius: 10,
+    fontSize: 20
   },
   btnNew:{
     backgroundColor: '#771b6f',
@@ -23,13 +43,5 @@ export const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 20,
     fontWeight: 'bold'
-  },
-  btnCancel:{
-    backgroundColor: '#fff',
-    borderRadius: 10,
-    height: 40,
-    width: 100,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
+  } 
 })

@@ -1,21 +1,29 @@
+import { useState } from 'react'
 import { Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { styles } from './style'
+
 
 export default function AddNote(){
+  const [note, setNote] = useState()
+  
+  function handleCreateNote(){
+
+  }
+
+
   return(
-    <View>
+    <View style={styles.container}>
       <TextInput placeholder='Titulo' />
 
-      <View>
-        <TextInput />
-      </View>
+      <TextInput placeholder=''/>
 
       <View>
-        <TouchableOpacity>
-          <Text>Ok</Text>
+        <TouchableOpacity style={styles.btnNew}>
+          <Text style={styles.textNew}>Ok</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <Text>Cancel</Text>
+        <TouchableOpacity style={styles.btnCancel}>
+          <Text style={styles.textNew}>Cancel</Text>
         </TouchableOpacity>
       </View>
     </View>
